@@ -2,14 +2,14 @@
 <html lang="fr">
  
   <head>
-	<link rel="stylesheet" href="styleprojet.css" />
+	<link rel="stylesheet" href="panier.css" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Panier vue.js</title>
 	<script src="vue.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -17,29 +17,26 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   </head>
  <header>
- 
- 	
-	<div class="overlay">
 		<div class="img">
 			<img src="logo.PNG" alt="Logo" id="logo" height="130px" width="130px">
+			
 		</div> 
-	<h1>Formulaire d'inscription </h1>
-	</div>
+		<div class="titre">
+			<h1>Formulaire d'inscription </h1>
+		</div>
+	
 </header>
   <body>
-    </br>
-	<label for="enf"> Nombre d'enfant inscrit de la même famille : </label> 
-	<input type="text" id="enf" name="enf" > 
-	</br>
-	
-	<?php 
+  
+  <?php 
 		$idAdherent=$_GET['idAdherent'];
 		$nom=$_GET['nom'];
 		$prenom=$_GET['prenom'];
     ?>
+	<div class="recup">
 	<table> 
 		<tr> 
-			<td> IdAdherent </td> 
+			<td> ID </td> 
 			<td><?php echo $idAdherent; ?></td> 
 		</tr>
 		<tr>
@@ -51,6 +48,14 @@
 			<td> <?php echo $prenom; ?> </td> 
 		</tr> 
 	</table>
+	</div>
+	
+  
+    </br>
+	<label for="enf"> Nombre d'enfant inscrit de la même famille : </label> 
+	<input type="text" id="enf" name="enf" > 
+	</br>
+	
 	
 	
 	

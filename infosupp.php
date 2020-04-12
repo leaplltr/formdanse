@@ -1,17 +1,8 @@
 <!DOCTYPE html> 
 <html> 
 <head> 
-	<link rel="stylesheet" href="styleprojet.css" />
+	<link rel="stylesheet" href="infosupp.css" />
 	<meta charset="utf-8">
-</head> 
-<header>
-	<div class="overlay">
-		<div class="img">
-			<img src="logo.PNG" alt="Logo" id="logo" height="130px" width="130px">
-		</div> 
-	<h1>Formulaire d'inscription </h1>
-	</div>
-	
 	<script>	
 		location.getParams = getParams;
 
@@ -35,6 +26,17 @@
 		}
 			
 	</script>
+</head>
+ 
+<header>
+		<div class="img">
+			<img src="logo.PNG" alt="Logo" id="logo" height="130px" width="130px">
+			
+		</div> 
+		<div class="titre">
+			<h1>Formulaire d'inscription </h1>
+		</div>
+	
 </header>
 <body> 
 
@@ -43,9 +45,10 @@
 		$nom=$_GET['nom'];
 		$prenom=$_GET['prenom'];
     ?>
+	<div class="recup">
 	<table> 
 		<tr> 
-			<td> IdAdherent </td> 
+			<td> ID </td> 
 			<td><?php echo $idAdherent; ?></td> 
 		</tr>
 		<tr>
@@ -57,6 +60,7 @@
 			<td> <?php echo $prenom; ?> </td> 
 		</tr> 
 	</table>
+	</div>
 	
 	
 </br>
@@ -106,7 +110,7 @@
 	</div>
 
 
-<div class="bouton">
+<div class="bouton1">
 <input type="button" id="sub" onclick="enregistrer3()" value="Enregistrer et Suivant">
 <span id="result"></span>
 </div> 

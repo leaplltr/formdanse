@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Information sur l'adherent</title>
-	<link rel="stylesheet" href="styleprojet.css" />
+	<link rel="stylesheet" href="danse.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -151,41 +151,45 @@
 
 
 <header>
-	<div class="overlay">
 		<div class="img">
 			<img src="logo.PNG" alt="Logo" id="logo" height="130px" width="130px">
+			
 		</div> 
-	<h1>Formulaire d'inscription </h1>
-	</div>
+		<div class="titre">
+			<h1>Formulaire d'inscription </h1>
+		</div>
+	
 </header>
 
 <body>
 
 <div class="container">
 
+<div class="annee">
+ <label for="annee"> Année d'inscription </label>  
+ <input type='text' class='annee' id='annee' >
+</div> 
+
 <div class="adherent"> 
+
 <h2> Adhérent </h2> 
-</br> 
- 
+</br> 	
 <table>
   
   <tbody>
-  <tr>
-		<td> Année d'inscription </td> 
-		<td><input type='text' class='annee' id='annee' ></td>
-	</tr> 
+   
    <tr class='tr_input'>
 		<td> Recherche </td> 
 		<td><input type='text' class='recherche' id='recherche' placeholder='rechercher...'></td>
 	</tr> 
 	<tr> 
 		<td> Nom </td> 
-		<td><input type='text' class='nom' id='nom' ></td>
+		<td><input type='text' class='nom' id='nom' placeholder="En majuscule" ></td>
 	</tr> 
 
 	<tr> 
 		<td> Prénom </td> 
-		<td><input type='text' class='prenom' id='prenom' ></td>
+		<td><input type='text' class='prenom' id='prenom' placeholder="En majuscule" ></td>
 	</tr>
 
 	<tr> 
@@ -234,12 +238,14 @@
   <tbody>
 	<tr> 
 		<td> Nom  </td> 
-		<td><input type='text' class='nomP' id='nomP' ></td>
+		<td><input type='text' class='nomP' id='nomP' placeholder="En majuscule" ></td>
+	</tr> 
 	</tr> 
 	
 	<tr> 
 		<td>  Prénom   </td> 
-		<td><input type='text' class='prenomP' id='prenomP' ></td>
+		<td><input type='text' class='prenomP' id='prenomP' placeholder="En majuscule" ></td>
+	</tr>  
 	</tr>
 
 	<tr> 
@@ -280,12 +286,14 @@
   <tbody>
 	<tr> 
 		<td> Nom  </td> 
-		<td><input type='text' class='nomM' id='nomM' ></td>
+		<td><input type='text' class='nomM' id='nomM' placeholder="En majuscule" ></td>
+	</tr> 
 	</tr> 
 	
 	<tr> 
 		<td>  Prénom   </td> 
-		<td><input type='text' class='prenomM' id='prenomM' ></td>
+		<td><input type='text' class='prenomM' id='prenomM' placeholder="En majuscule" ></td>
+	</tr>  
 	</tr>
 	
 	<tr> 
@@ -327,12 +335,14 @@
   <tbody>
 	<tr> 
 		<td> Nom  </td> 
-		<td><input type='text' class='nomU' id='nomU' ></td>
+		<td><input type='text' class='nomU' id='nomU' placeholder="En majuscule" ></td>
+	</tr>  
 	</tr> 
 	
 	<tr> 
 		<td>  Prénom   </td> 
-		<td><input type='text' class='prenomU' id='prenomU' ></td>
+		<td><input type='text' class='prenomU' id='prenomU' placeholder="En majuscule" ></td>
+	</tr>  
 	</tr>
 	
 	<tr> 
